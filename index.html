@@ -13,61 +13,97 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-       <!-- SITE-HEADER -->
-       <header class="site-header">
-          <div class="site-header__container container">
-            <!-- LOGO -->
-            <a class="site-header__logo logo" href="">
-              <img class="logo__img" src="./img/Shortly.svg" alt="Shortly logo" width="120" height="33">
-            </a>
-            
-            <nav class="site-header__sitenav sitenav">
-              <ul class="sitenav__list">
-                <li class="sitenav__item"><a class="sitenav__link" href="">Features</a></li>
-                <li class="sitenav__item"><a class="sitenav__link" href="">Pricing</a></li>
-                <li class="sitenav__item"><a class="sitenav__link" href="">Resourec</a></li>
-              </ul>
-            </nav>
-
-            <div class="site-header__auth">
-              <a class="site-header__login-link" href="#">Login</a>
-              <a class="button button__small" href="#">Sign Up</a>
-            </div>
-          </div>
-       </header>
-
-
-       <main class="main-content">
-        <div class="hero">
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <div class="site-header__container container">
+      <!-- LOGO -->
+      <a class="site-header__logo logo" href="">
+        <img class="logo__img" src="./img/Shortly.svg" alt="Shortly logo" width="120" height="33">
+      </a>
+      
+      <nav class="site-header__sitenav sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a class="sitenav__link" href="">Features</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="">Pricing</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="">Resourec</a></li>
+        </ul>
+      </nav>
+      
+      <div class="site-header__auth">
+        <a class="site-header__login-link" href="#">Login</a>
+        <a class="button button__small" href="#">Sign Up</a>
+      </div>
+    </div>
+  </header>
+  
+  
+  <main class="main-content">
+    <div class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <h1 class="hero__title">More than just shorter links</h1>
+          <p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+          <a class="button " href="">Get Started</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="index-url-shortener-features-wrapper">
+      <!-- URL-SHORTENER-FORM -->
+      <div class="index-url-shortener-features-wrapper__url-shortener">
+        <section class="url-shortener">
           <div class="container">
-            <div class="hero__inner">
-              <h1 class="hero__title">More than just shorter links</h1>
-              <p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-              <a class="button " href="">Get Started</a>
-            </div>
+            <h2 class="visually-hidden">URL shortener</h2>
+            <form action="https://echo.htmlacademy.ru" class="url-shortener__form" method="POST" >
+              <div class="url-shortener__input-wrapper">
+                <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..." aria-label="url-input" required>
+              </div>
+              <button class="url-shortener__sumbit button button--rectangle-big" type="sumbit">Shorten It!</button>
+            </form>
           </div>
+        </section>
+      </div>
+      
+      
+      
+      <!-- INDEX-FEATURES -->
+      <section class="index-features">
+        <div class="container">
+          <div class="index-features__top">
+            <h2 class="index-features__title">Advanced Statistics</h2>
+            <p class="index-features__top-info">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+          </div>
+
+          <ul class="index-features__list">
+            <li class="index-features__item index-feature">
+              <div class="index-feature__icon-wrapper">
+                <img class="index-feature__icon" src="./img/icon-line-graph.svg" alt="Line chart icon" width="40" height="40">
+              </div>
+              <h3 class="index-feature__title">Brand Recognition</h3>
+              <p class="index-feature__info">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+            </li>
+            
+            <li class="index-features__item index-feature">
+              <div class="index-feature__icon-wrapper">
+                <img class="index-feature__icon" src="./img/Combined Shape.svg" alt="Line chart icon" width="40" height="40">
+              </div>
+              <h3 class="index-feature__title">Detailed Records</h3>
+              <p class="index-feature__info">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+            </li>
+            <li class="index-features__item index-feature">
+              <div class="index-feature__icon-wrapper">
+                <img class="index-feature__icon" src="./img/icon-custom.svg" alt="Line chart icon" width="48" height="48">
+              </div>
+              <h3 class="index-feature__title">Fully Customizable</h3>
+              <p class="index-feature__info">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+            </li>
+          </ul>
         </div>
-
-
-        <div class="index-url-shortener-features-wrapper">
-            <!-- URL-SHORTENER-FORM -->
-            <div class="index-url-shortener-features-wrapper__url-shortener">
-              <section class="url-shortener">
-                <div class="container">
-                  <h2 class="visually-hidden">URL shortener</h2>
-                  <form action="https://echo.htmlacademy.ru" class="url-shortener__form" method="POST" >
-                     <div class="url-shortener__input-wrapper">
-                      <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..." aria-label="url-input" required>
-                      <div class="url-shortener__error-msg">Please add a link</div>
-                     </div>
-                     <button class="url-shortener__sumbit button button--rectangle-big" type="sumbit">Shorten It!</button>
-                  </form>
-                </div>
-              </section>
-            </div>
-        </div>
-       </main>
-
+      </section>
+    </div>
+  </main>
+  
   <script src="./js/main.js"></script>
 </body>
 </html>
