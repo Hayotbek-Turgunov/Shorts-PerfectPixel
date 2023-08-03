@@ -90,7 +90,7 @@ img{
   text-align: center;
   background-color: var(--accent-color);
   cursor: pointer;
-  border-radius: 28px;
+  border-radius:28px;
   padding: 14px 40px 12px;
   border: 0;
   color: #fff;
@@ -114,8 +114,9 @@ img{
 }
 
 .button--big{ 
-  padding: 18px 16px 40px;
-  border-radius: 5px;
+  padding: 18px 40px 16px;
+  border-radius: 35px;
+
 }
 
 .button--rectangle{
@@ -139,10 +140,12 @@ img{
   font-weight: bold;
   line-height: normal;
 }
+
 .site-header__container {
   display: flex;
   align-items: center;
 }
+
 .site-header__logo {
  margin-right: 45px;
 }
@@ -155,16 +158,17 @@ img{
 .logo:hover{
   opacity: 0.8;
 }
+
 .logo:active{
   opacity: 0.6;
 }
+
 .logo__img {
   display: block;
   width: 120px;
   height: 33px;
   object-fit: contain;
 }
-
 
 .site-header__sitenav {
   margin-right: auto;
@@ -204,4 +208,37 @@ img{
 }
 .site-header__login-link:active{
   opacity: 0.6;
+}
+
+
+/* HERO */
+.hero {
+  padding-top: 92px;
+  padding-bottom: 222px;
+  background-image: url(../img/hero-bg.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 476px) top 30px;
+}
+
+.hero__inner {
+ max-width: 565px;  
+}
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  color: var(---text-color-dark);
+}
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 36px;
+
+}
+.button {
+}
+.button--big {
 }
